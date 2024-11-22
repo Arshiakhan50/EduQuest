@@ -282,8 +282,9 @@
     margin-top: 3rem;
 }
 .intro .container .instructor{
-    background-image: url("https://mhaecal.github.io/frontend/img/Rectangle%2019.png");
+    background-image: url('../images/dark_bg_arctic_fox.png');
     background-repeat: no-repeat;
+    border-radius: 10px; /* Adjust the value as needed */
     background-size: cover;
     height: 280px;
     width: 420px;
@@ -309,7 +310,14 @@
 .intro .platform h4{
     color: #fff;
 }
-.intro .instructor button{
+.intro .instructor {
+    position: relative; /* Ensure the parent element is positioned relatively */
+}
+
+.intro .instructor button {
+    position: absolute;
+    top: 60%; /* Adjust as needed to position slightly below the center */
+    right: 10px; /* Adjust as needed */
     border: 1px solid #fff;
     border-radius: 20px;
     background-color: transparent;
@@ -318,7 +326,6 @@
     padding: 10px 30px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
-
 }
 .intro .student button{
     border: none;
@@ -686,7 +693,7 @@ small{
 }
 
 footer{
-    background-color: #ff968a;
+    background-color: #f2e0fb;
     text-align: center;
     padding: 30px 20px;
 }
